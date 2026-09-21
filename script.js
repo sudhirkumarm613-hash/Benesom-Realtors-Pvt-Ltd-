@@ -13,11 +13,4 @@ document.querySelectorAll('.nav-links a').forEach((link) => {
   });
 });
 
-document.querySelector('#contact-form')?.addEventListener('submit', (event) => {
-  event.preventDefault();
-  const message = document.querySelector('.form-message');
-  message.textContent = 'Thank you — we will be in touch shortly.';
-  event.currentTarget.reset();
-});
-
 document.querySelector('#year').textContent = new Date().getFullYear();
